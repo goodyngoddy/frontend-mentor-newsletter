@@ -40,5 +40,5 @@ function errorCheck(e) {
 
 dismissBtn.addEventListener('click', () => {
   body.classList.remove('clicked')
-  window.open('index.html', self)
+  window.open('index.html', 'self')
 })
