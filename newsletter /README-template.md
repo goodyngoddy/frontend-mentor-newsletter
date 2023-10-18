@@ -30,7 +30,8 @@ Users should be able to:
 
 ## My process
 - The solution was using a mobile phone with the aid 0f spck editor app for android.
-- I had to use an aspect ratio so as to immitate the screen size of an actual desktop
+- I had to use an aspect ratio so as to immitate the screen size of an actual desktop before I finally decided to set the width and height of the body to 100% and left the aspect ratio to the content alone.
+- 
 
 ### Built with
 
