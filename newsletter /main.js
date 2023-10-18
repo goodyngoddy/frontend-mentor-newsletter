@@ -8,6 +8,7 @@ let submitBtn = document.querySelector('#submit-btn')
 let dismissBtn = document.querySelector('#dismiss-btn')
 let errorMessage = document.querySelector('#error-message')
 let input = document.querySelector('input')
+let email = document.querySelector('#email')
 
 submitBtn.addEventListener('click', errorCheck)
 
@@ -21,7 +22,8 @@ function errorCheck(e) {
   if (inputValue != '') {
     if (inputValue.includes('@') && inputValue.includes('.com')) {
       if (inputValue.indexOf('@') < inputValue.indexOf('.com')) {
-        body.classList.add('clicked')  
+        body.classList.add('clicked')
+        email.textContent = inputValue
       } else {
         errorMessage.textContent = 'Valid email required'
       }

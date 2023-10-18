@@ -11,12 +11,13 @@
   box-sizing: border-box;
 }
 body {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: hsl(234, 29%, 20%);
   border: 2px solid white;
-  aspect-ratio: 4/3;
   margin: 0;
 }
 
@@ -67,10 +68,9 @@ p, #list, form {
 }
 p {
   font-family: Roboto-Regular;
-  margin: 0 0 20px 0;
 }
 #list {
-  margin: 0 0 40px 0;
+  margin-top: 5%;
   font-family: Roboto-Regular;
 }
 .list-item {
@@ -80,8 +80,11 @@ p {
 }
 .list-item span {
   content: url('/newsletter /assets/images/icon-list.svg');
+  width: 14px;
   margin: 0 10px 0 0;
-  width: 15px;
+}
+form {
+  margin-top: 15%;
 }
 input, button {
   width: 100%;
